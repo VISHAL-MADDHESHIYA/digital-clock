@@ -3,7 +3,8 @@
 A highly advanced, fully responsive, and visually appealing Digital Clock web application. While the base task was to create a simple digital clock, this project goes above and beyond by integrating a high-precision Stopwatch, a Pomodoro Timer, Time-Zone toggles, and a modern Glassmorphism UI with persistent Dark/Light themes.
 
 ## 🚀 Live Demo
-**[Click here to view the Live Project](https://your-github-username.github.io/your-repo-name/)** *(Replace with your actual GitHub Pages link)*
+
+**[Click here to view the Live Project](https://vishal-maddheshiya.github.io/digital-clock/)**
 
 ## ✨ Features
 
@@ -22,13 +23,22 @@ A highly advanced, fully responsive, and visually appealing Digital Clock web ap
 
 ## 🧠 Approach & Outcome
 
-### Approach:
-Instead of using basic `Date` methods and manual string padding, I utilized the modern `Intl.DateTimeFormat` API to handle complex timezones (Local vs UTC) and 12H/24H formatting cleanly. For the stopwatch, `setInterval` was avoided due to its inherent drift; instead, `performance.now()` combined with `requestAnimationFrame` was used to ensure 60fps smooth and accurate time tracking. The UI was built focusing on modern aesthetics (Glassmorphism) and accessibility (responsive across mobile and desktop).
+### Approach
 
-### Outcome:
-The final result is a fully functional, portfolio-ready "Time Dashboard" that demonstrates a deep understanding of JavaScript timing events, browser APIs, and advanced CSS styling. It successfully meets all task objectives (Date objects, timers, DOM updates) while delivering a polished user experience.
+Instead of using basic `Date` methods and manual string padding, I utilized the modern `Intl.DateTimeFormat` API to handle complex timezones (Local vs UTC) and 12H/24H formatting cleanly.
+
+For the stopwatch, `setInterval` was avoided due to its inherent drift; instead, `performance.now()` combined with `requestAnimationFrame` was used to ensure smooth and accurate time tracking.
+
+The UI was built with a focus on modern aesthetics (Glassmorphism), responsiveness, and accessibility across mobile and desktop devices.
+
+### Outcome
+
+The final result is a fully functional, portfolio-ready **Time Dashboard** that demonstrates JavaScript timing events, browser APIs, and advanced CSS styling.
+
+It successfully meets all task objectives including Date objects, timers, DOM updates, automatic clock updates, and responsive design.
 
 ## 📁 Folder Structure
+
 ```text
 ├── index.html      # Main HTML structure
 ├── style.css       # Styling, animations, and themes
