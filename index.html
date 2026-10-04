@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Dashboard</title>
+    <!-- Google Font for Digital Look -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Inter:wght@300;500&display=swap" rel="stylesheet">
+    <!-- Link to CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Theme Toggle Button -->
+    <button class="theme-toggle" id="themeToggle">🌙 Theme</button>
+
+    <div class="dashboard">
+        <!-- Main Clock -->
+        <div class="clock-section">
+            <div class="time-display" id="clock">00:00:00</div>
+            <div class="date-display" id="date">Loading...</div>
+            <div class="controls">
+                <button id="formatToggle" class="active">24H Format</button>
+                <button id="timezoneToggle">Show UTC</button>
+            </div>
+        </div>
+
+        <!-- Advanced Panels -->
+        <div class="panels">
+            <!-- Stopwatch -->
+            <div class="panel">
+                <h3>Stopwatch</h3>
+                <div class="panel-display" id="stopwatch">00:00:00</div>
+                <div class="panel-controls">
+                    <button id="swStart">Start</button>
+                    <button id="swPause">Pause</button>
+                    <button id="swReset">Reset</button>
+                </div>
+            </div>
+
+            <!-- Pomodoro Timer -->
+            <div class="panel">
+                <h3>Pomodoro (25m)</h3>
+                <div class="panel-display" id="timer">25:00</div>
+                <div class="panel-controls">
+                    <button id="tmStart">Start</button>
+                    <button id="tmPause">Pause</button>
+                    <button id="tmReset">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
